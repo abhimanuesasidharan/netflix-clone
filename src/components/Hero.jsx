@@ -26,7 +26,7 @@ const Hero = () => {
   <p>fetching movie ...</p>
   </>
 )
-           // ARRAY DE-STRUCTURING //
+           // OBJECT DE-STRUCTURING //
 
 const { title, backdrop_path, release_date, overview } = movie
 
@@ -35,7 +35,6 @@ const { title, backdrop_path, release_date, overview } = movie
       <div className='w-full h-full'>
         <div className='absolute w-full h-[550px] lg:h-[550px] bg-gradient-to-r from-black'/>
           <img className='w-full  h-full object-cover object-top' src={createImageUrl(backdrop_path, "original")} alt={title} />
-
           <div className='absolute w-full top-[10%] lg:top-[26%] p-4 md:p-8'>
             <h1 className='text-3xl md:text-6xl font-nsans-bold'>{title}</h1>
             <div className='mt-8 mb-4'>

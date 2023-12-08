@@ -1,5 +1,5 @@
-const key = import.meta.env.VITE_TMDB_KEY
-const baseUrl = "https://api.themoviedb.org/3"
+const key = import.meta.env.VITE_TMDB_KEY;
+const baseUrl = "https://api.themoviedb.org/3";
 
 const endpoints = {
     popular: `${baseUrl}/movie/popular?api_key=${key}`,
