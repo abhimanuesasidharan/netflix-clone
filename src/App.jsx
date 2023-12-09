@@ -5,10 +5,13 @@ import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Profile from './pages/Profile'
 import NavBar from './components/NavBar'
+import { AuthContextProvider } from './context/AuthContext'
+import ProtectedRoute from './components/ProtectedRoute'
 
 const App = () => {
   return (
    <>
+   <AuthContextProvider>
    <NavBar/>
    <Routes>
     <Route 
@@ -25,9 +28,14 @@ const App = () => {
     />
     <Route 
     path="/profile"
-    element={<Profile/>} 
+    element={
+    <ProtectedRoute>
+      <Profile/>
+    </ProtectedRoute>
+      } 
     />
    </Routes>
+   </AuthContextProvider>
    </>
   )
 }
