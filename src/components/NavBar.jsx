@@ -16,7 +16,7 @@ const NavBar = () => {
   return (
     <div className='absolute w-full p-4 flex items-center justify-between z-50'>
         <Link to="/">
-            <h1 className='uppercase text-red-600 font-nsans-bold cursor-pointer text-5xl'>Netflix</h1>
+            <h1 className='uppercase text-red-600 font-nsans-bold cursor-pointer text-3xl md:text-5xl'>Netflix</h1>
         </Link>
 
         {

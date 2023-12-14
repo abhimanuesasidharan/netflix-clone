@@ -29,7 +29,7 @@ const MovieItem = ({ movie }) => {
       <img className="w-full h-40 block object-cover object-top" src={backdropUrl} alt={movie.title} />
       <div className='absolute top-0 w-full h-40 bg-black/80 opacity-0 hover:opacity-60'>
         <p className='whitespace-normal text-xs md:text-sm flex justify-center  items-end h-full'>{movie.title}</p>
-        <p onClick={markFavShow}>{ like ? (<FaHeart size={20} className='absolute top-2 left-2 text-gray-300'/>) : (<FaRegHeart className='absolute top-2 left-2 text-gray-300'/>)}</p>
+        <p onClick={markFavShow}>{ like ? (<FaHeart size={20} className='absolute top-2 left-2 text-red-700'/>) : (<FaRegHeart className='absolute top-2 left-2 text-gray-300'/>)}</p>
       </div>
     </div>
   )
